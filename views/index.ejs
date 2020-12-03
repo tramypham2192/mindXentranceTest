@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Number</title>
+</head>
+<body>
+    <h1>Lucky Number</h1>
+    <h3>Insert a number from 0 to 10</h3> 
+    
+    <form method="post" action="/">
+    <div>
+            <% for (var i=0; i < displayResultArray.length; i++){ %>
+                <div> <%= messageDisplay %> <%= displayResultArray[i] %></div>
+            <% } %>
+        
+        
+    </div>
+    <input type="text" name="inputNumber" placeholder="Insert the number here" />
+    <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
